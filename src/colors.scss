@@ -1,0 +1,30 @@
+// Main Colors
+$main-bg-color: #2C3D28; // Main background color
+$main-text-color: #E8AF74; // Main text color
+
+// Primary Colors
+$primary-color: $main-text-color; // Use main text color as primary
+$primary-color-dark: darken($primary-color, 10%); // Darker shade for primary
+$primary-color-light: lighten($primary-color, 10%); // Lighter shade for primary
+
+// Secondary Colors
+$secondary-color: $main-bg-color; // Use main background color as secondary
+$secondary-color-dark: darken($secondary-color, 10%); // Darker shade for secondary
+$secondary-color-light: lighten($secondary-color, 10%); // Lighter shade for secondary
+
+// Other Colors
+$success-color: #28a745; // Success color
+$info-color: #17a2b8; // Information color
+$warning-color: #ffc107; // Warning color
+$danger-color: #dc3545; // Danger color
+
+// Background Colors
+$body-bg: $main-bg-color; // Use main background color for the body
+$card-bg: $main-text-color; // Use main text color for cards
+
+// Text Colors
+$text-color: $main-text-color; // Use main text color for general content
+$link-color: $primary-color; // Use primary color for links
+
+// Borders
+$border-color: #ced4da; // Default border color

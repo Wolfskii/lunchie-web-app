@@ -1,14 +1,132 @@
-:root {
-  
-  body {
-    background-color: #2C3D28;
-    color: #E8AF74;
-  }
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
+/* Other stylesheets */
+@import 'reset.scss';
+@import 'colors.scss';
 
-  h1 {
-  font-size: 5rem;
+html {
+  background-color: $main-bg-color;
+	font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: $main-text-color;
+  padding: 1rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+ {
+	font-family: 'Yeseva One', cursive;
 }
 
+h1 {
+	font-size: 3rem !important;
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 2.6rem;
+	line-height: 1.2;
+}
+
+h3 {
+	font-size: 2.2rem;
+	line-height: 1.2;
+}
+
+h4 {
+	font-size: 1.8rem;
+	line-height: 1.2;
+}
+
+h5 {
+	font-size: 1.6rem;
+	line-height: 1.2;
+}
+
+h6 {
+	font-size: 1.4rem;
+	line-height: 1.2;
+}
+
+p {
+	font-size: 1.4rem;
+	line-height: 1.5;
+}
+
+a {
+	font-size: 1.4rem;
+	line-height: 1.5;
+}
+
+button {
+	padding: 0.8rem 1.8rem;
+	font-size: 1.2rem;
+	font-weight: 700;
+	background: #E8AF74;
+	color: #2C3D28;
+}
+
+.shadow {
+	filter: drop-shadow(4px 4px 0px #000000);
+	border: 3px solid #000000;
+	border-radius: 5px;
+}
+
+.underline-animation {
+	font-size: 1.2rem;
+	text-decoration: none;
+	position: relative;
+}
+
+.underline-animation:hover,
+.underline-animation:focus {
+	color: #ffffff;
+}
+
+.underline-animation::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: -3px;
+	width: 0;
+	height: 3px;
+	background-color: #ffffff;
+	transition: width 0.3s ease;
+}
+
+.underline-animation:hover::after,
+.underline-animation:focus::after {
+	width: 100%;
+}
+
+.underline-animation:hover::after {
+	right: auto;
+	left: 0;
+}
+
+.underline-animation::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	width: 0;
+	height: 3px;
+	background-color: #ffffff;
+	transition: width 0.3s ease;
+}
+
+.underline-animation:hover::before,
+.underline-animation:focus::before {
+	width: 100%;
+}
+
+.underline-animation:focus::before {
+	right: 0;
+	left: auto;
+}

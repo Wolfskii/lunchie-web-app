@@ -5,9 +5,4 @@
   <p>Daily menu:</p>
 </header>
 
-<style>
-  h1 {
-    font-size: 5rem;
-    font-weight: bold;
-  }
-</style>
+<style></style>
