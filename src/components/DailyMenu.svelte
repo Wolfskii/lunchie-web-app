@@ -36,22 +36,28 @@
 
 <style lang="scss">
   .daily-menu {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   h4 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
   }
 
   .period-subheading {
     font-size: 1.2rem !important;
-    margin-bottom: 0.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
     text-decoration:underline;
   }
 
   ul {
     li {
-      margin-bottom: 0.4rem;
+      padding: 1rem;
+      margin-bottom: 0.8rem;
+      background-color: #E8AF74;
+      color: #2C3D28;
+      border-radius: 15px;
+      width: 60rem;
     }
   }
 </style>
