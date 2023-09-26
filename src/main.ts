@@ -1,8 +1,16 @@
-import './app.css'
+import './app.scss'
 import App from './App.svelte'
 
-const app = new App({
-  target: document.getElementById('app'),
-})
+const appElement = document.getElementById('app');
 
-export default app
+let app = null;
+
+if (appElement) {
+  app = new App({
+    target: appElement,
+  });
+} else {
+  console.error("Element with ID 'app' not found.");
+}
+
+export default app;

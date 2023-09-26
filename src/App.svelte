@@ -1,9 +1,10 @@
 <script lang="ts">
   import TailwindCss from './TailwindCSS.svelte';
+  import Header from './components/Header.svelte';
 </script>
 
 <main>
-<h1>Lunchie App</h1>
+  <Header />
 </main>
 
 <TailwindCss />
