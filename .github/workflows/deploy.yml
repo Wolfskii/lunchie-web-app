@@ -1,12 +1,16 @@
-name: Deploy to GitHub Pages on Merge or Push to Main branch
+name: Deploy to GitHub Pages on Merge or Push to main-, develop or master-branch
 
 on:
   push:
     branches:
       - main
+      - develop
+      - master
   pull_request:
     branches:
       - main
+      - develop
+      - master
 
 jobs:
   deploy:
